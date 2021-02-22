@@ -1,0 +1,34 @@
+body 
+  font-size 12px
+  md 14px
+  lg 16px
+  xl 18px
+  
+.awesome-grid
+  grid-template 'faz' 60px\
+                'foo' auto\
+                'bar' auto\
+               / 1fr
+
+  lg grid-template  'faz faz' 60px\
+                    'foo bar' auto \/\
+                     2fr 1fr
+                    
+  xl grid-template  'faz faz' 60px\
+                    'foo bar' auto \/\
+                     3fr 1fr
+                   
+  sm display none
+  md background url('/my/path.jpg') no-repeat cover center center fixed
+
+.responsive-color
+  background red
+  color orange
+  
+  +md()
+    background blue
+    color cyan
+    
+  +lg()
+    background green
+    color lime

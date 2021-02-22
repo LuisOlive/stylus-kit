@@ -1,0 +1,36 @@
+map(array, func)
+  buf = ()
+  push(buf, func(x)) for x in array
+  buf
+  
+filter(array, func)
+  buf = ()
+  for x in array
+    push(buf, x) if func(x)
+  buf
+  
+reduce(array, func)
+  buf = array[0]
+  for x, i in array
+    buf = func(buf, x) if i
+  buf
+  
+concat()
+  buf = ()
+  for array in arguments
+    push(buf, x) for x in array
+  buf
+  
+zip(keys, values)
+  buf = {}
+  buf[key] = values[i] for key, i in keys
+  buf
+  
+copy(old)
+  map(old, @(x){x})
+  
+clone(value, n)
+  map(1..n, @(x){value})
+    
+largest(array)
+  reduce(array, @(acc, cur){cur > acc ? cur : acc})

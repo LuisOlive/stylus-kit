@@ -1,0 +1,16 @@
+react: '#61DAFB'
+react-sky: '#61DBFB'
+react-dark-gray: '#282C34'
+react-gray: '#32363E'
+react-light-gray: '#ECECEC'
+
+vue: '#41B883'
+vue-dark-green: '#42B983'
+vue-grey: '#35495E'
+
+angular: '#DD0031'
+angular-dark: '#C3002F'
+
+svelte: '#FF3E00'
+svelte-grey: '#676778'
+svelte-dark-grey: '#676778'

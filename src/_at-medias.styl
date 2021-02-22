@@ -1,0 +1,19 @@
+above(measure)
+  @media screen and (min-width measure)
+    {block}
+    
+below(measure)
+  @media screen and (max-width measure)
+    {block}
+    
+between(min, max)
+  @media screen and (min-width min) and (max-width max)
+    {block}
+
+prefers-dark()
+  @media (prefers-color-scheme dark)
+    {block}
+    
+prefers-light()
+  @media (prefers-color-scheme light)
+    {block}

@@ -1,0 +1,51 @@
+.grid
+  +between(450px, 800px)
+    color red
+
+    
+  grid-template 'faz faz faz' 300px \
+                'foo foo faz' 500px \
+              /  1fr 1fr 2fr
+
+p(format_('Hey, {2} {1}, your name is {1}, is it correct, {2}?', 'Louis', 'mr'))
+
+.flex
+  display flex
+  flex-wrap wrap
+  flex-arrange space-between center
+
+.faz
+  font-size 11px
+  
+  sm 12px
+  md inset 25px
+  
+  +lg()
+    font-size 16px
+    color lime
+  
+  +xl()
+    font-size 18px
+    color red
+    background yellow
+  
+  &:before
+    content format_('this {1} is a {2} {3}{4}', 'string', 'unnamed', 'sentence', 's')
+    width add(10px, 15px)
+
+.foo
+  padding add(10, 25)px
+  content some-setting
+  grid-template-columns get-list()
+
+// @require _yaml
+@require breakpoints
+
+// body
+//   &:before
+//     content format_('{} {1}ed a {1} in the {2} head of a {2} guy', 'Pablito' 'nail' 'bald')
+    
+//   &:after
+//     content format_('this {} is a {} {}{}', 'string' 'unnamed' 'sentence' 's')
+    
+//   grid-area format_('area-{}', 1)

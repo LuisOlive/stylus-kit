@@ -1,0 +1,22 @@
+use('js/index.js')
+
+@require _arrays
+@require _at-medias
+@require _basic-properties
+@require _flexbox
+@require _responsive-props
+@require _grid
+
+/*
+  defining measure properies from dedia queries 
+  
+  bootstrap mediaquerys available in yml/measures.bootstrap.yml
+*/
+measures = yaml('yml/measures.default.yml', { hash: true })
+
+/*
+  preventing stylus prefixing of @keyframes
+  
+  more info: https://stylus-lang.com/docs/keyframes.html
+*/
+vendors = official

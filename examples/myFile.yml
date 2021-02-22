@@ -1,0 +1,4 @@
+small: 'screen and (max-width: 400px)'
+tablet:
+  landscape: 'screen and (min-width: 600px) and (orientation: landscape)'
+  portrait: 'screen and (min-width: 600px) and (orientation: portrait)'

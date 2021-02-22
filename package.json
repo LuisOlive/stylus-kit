@@ -1,0 +1,25 @@
+{
+  "name": "stylus-kit",
+  "version": "0.9.0",
+  "description": "This is a library of stylus mixins for the most natural syntax in stylus",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npx stylus examples/index.styl -w",
+    "once": "npx stylus examples/index.styl"
+  },
+  "keywords": [
+    "stylus",
+    "stylus mixins",
+    "stylus library"
+  ],
+  "author": "Luis Olivares <lp.olivares@yahoo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^4.0.0",
+    "stylus": "^0.54.8"
+  },
+  "devDependencies": {
+    "@types/stylus": "^0.48.33",
+    "json-beautify": "^1.1.1"
+  }
+}

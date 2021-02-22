@@ -1,0 +1,18 @@
+@require stylus-kit
+
+.faz
+  grid-template-columns map(1..5, @(a){ (a)fr })
+  
+.foo
+  odd-numbers filter(1..10, @(a){ a % 2 })
+  
+.bar
+  z-index reduce(1..5, @(a, b){ '%s%s' % (a b) })
+
+.faz
+  some-lists concat(1..9, range(10, 100, 10), range(100, 1001, 100))
+  
+my-hash = zip(('width' 'height' 'color'), (4em 5em cyan))
+
+.render-hash
+  {my-hash}

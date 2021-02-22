@@ -1,0 +1,16 @@
+flex-arrange(main-axis, cross-axis = main-axis, other = null)
+  __wraps = wrap wrap-reverse
+  
+  justify-content main-axis
+  
+  if (@flex-wrap && @flex-wrap in __wraps) || (@flex-flow && (@flex-flow[0] in __wraps || @flex-flow[1] in __wraps))
+    align-content cross-axis
+    
+    if other
+      align-items other
+    
+  else 
+    align-items cross-axis
+    
+    if other
+      align-content other
