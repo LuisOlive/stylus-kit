@@ -1,19 +1,19 @@
-above(measure)
+moreThan(measure)
   @media screen and (min-width measure)
     {block}
     
-below(measure)
+lessThan(measure)
   @media screen and (max-width measure)
     {block}
-    
-between(min, max)
+
+belongsTo(min, max)
   @media screen and (min-width min) and (max-width max)
     {block}
 
-prefers-dark()
+prefersDark()
   @media (prefers-color-scheme dark)
     {block}
     
-prefers-light()
+prefersLight()
   @media (prefers-color-scheme light)
     {block}

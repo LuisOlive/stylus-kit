@@ -4,15 +4,15 @@
   "description": "This is a library of stylus mixins for the most natural syntax in stylus",
   "main": "src/index.js",
   "scripts": {
-    "start": "npx stylus examples/index.styl -w",
-    "once": "npx stylus examples/index.styl"
+    "start": "npx stylus examples/colors.styl -u ./src/index.js -w",
+    "once": "npx stylus examples/ -u ./src/index.js"
   },
   "keywords": [
     "stylus",
     "stylus mixins",
     "stylus library"
   ],
-  "author": "Luis Olivares <lp.olivares@yahoo.com>",
+  "author": "Luis Olivares <luisolivaresesimez@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "js-yaml": "^4.0.0",

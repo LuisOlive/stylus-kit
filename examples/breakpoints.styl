@@ -1,34 +1,37 @@
+@require stylus-kit
+
+.responsive-color
+  color facebook 
+  sm color twitter
+  md color amazon 
+  lg color android 
+  xl color airbnb
+    
 body 
   font-size 12px
   md 14px
   lg 16px
   xl 18px
   
-.awesome-grid
-  grid-template 'faz' 60px\
-                'foo' auto\
-                'bar' auto\
-               / 1fr
+.responsive-color
+  background instagram-royal-blue
+  color instagram-blue
+  
+  +md()
+    background instagram-dark-pink
+    color instagram-dark-orange
+    
+  +lg()
+    background instagram-red
+    color instagram-yellow
 
-  lg grid-template  'faz faz' 60px\
-                    'foo bar' auto \/\
-                     2fr 1fr
-                    
-  xl grid-template  'faz faz' 60px\
-                    'foo bar' auto \/\
-                     3fr 1fr
-                   
+.awesome-grid
   sm display none
   md background url('/my/path.jpg') no-repeat cover center center fixed
 
-.responsive-color
-  background red
-  color orange
+  lg grid-template  'faz faz' 60px \
+                    'foo bar' auto \/\
+                     2fr 1fr
+                    
+  xl inset 25px
   
-  +md()
-    background blue
-    color cyan
-    
-  +lg()
-    background green
-    color lime

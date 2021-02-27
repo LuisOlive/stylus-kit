@@ -1,0 +1,30 @@
+@require stylus-kit
+
+body
+  colors android yahoo
+  border solid 1px amazon
+  
+  +moreThan(540px)
+    colors react airbnb
+    border solid 2px angular
+  
+h1
+  color react
+  
++moreThan(540px)  
+  h1
+    color vue
+
++belongsTo(100px, 150px)
+  body
+    colors svelte spotify
+    border solid 2px netflix
+    
+  h1
+    color snapchat
+
++lessThan(300px)
+  body
+    colors svelte spotify
+    font-size 1em
+    border solid 2px netflix

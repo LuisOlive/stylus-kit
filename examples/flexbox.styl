@@ -1,0 +1,25 @@
+@require stylus-kit
+
+.flex
+  display flex
+  
+  &.is-centered-xy
+    flex-arrange center
+  
+  &.is-different
+    flex-arrange center space-between
+  
+  &.is-wrap
+    flex-wrap wrap
+    flex-arrange flex-start
+  
+  &.is-flow
+    flex-flow column wrap
+    flex-arrange flex-end
+    
+  &.is-reverse
+    flex-wrap wrap-reverse
+    flex-arrange space-around
+    
+  &.is-defined-the-other-one
+    flex-arrange space-around center flex-end

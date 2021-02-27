@@ -15,6 +15,14 @@ use('js/index.js')
 measures = yaml('yml/measures.default.yml', { hash: true })
 
 /*
+  defining color variables
+*/
+yaml('yml/colors.brands.simple.yml')
+yaml('yml/colors.brands.detailed.yml')
+yaml('yml/colors.technologies.simple.yml')
+yaml('yml/colors.technologies.detailed.yml')
+
+/*
   preventing stylus prefixing of @keyframes
   
   more info: https://stylus-lang.com/docs/keyframes.html

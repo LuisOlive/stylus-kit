@@ -5,23 +5,36 @@ This is a library of stylus mixins for the most natural syntax in stylus
 stylus is based on natural syntax, this mixins starts with programmers' desireds shorthands
 
 ```stylus
-header
-  size 100vw 4em
+.awesome-grid
+  grid-template 'faz' 60px \
+                'foo' auto \
+                'bar' auto /\
+                 1fr
 
-.square
-  size 2em
+  lg grid-template  'faz faz' 60px \
+                    'foo bar' auto \/\
+                     2fr 1fr
+
+  xl grid-template  'faz faz' 60px \
+                    'foo bar' auto \/\
+                     3fr 1fr
 ```
 
 yields:
 
 ```css
-header {
-  width: 100vw;
-  height: 4em;
+.awesome-grid {
+  grid-template: 'faz' 60px 'foo' auto 'bar' auto/1fr;
 }
-.square {
-  width: 2em;
-  height: 2em;
+@media screen and (min-width: 900px) {
+  .awesome-grid {
+    grid-template: 'faz faz' 60px 'foo bar' auto/2fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .awesome-grid {
+    grid-template: 'faz faz' 60px 'foo bar' auto/3fr 1fr;
+  }
 }
 ```
 

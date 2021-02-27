@@ -1,3 +1,1 @@
-module.exports = () => style => {
-  style.define('stylus-kit', __dirname)
-}
+module.exports = () => style => style.include(__dirname)

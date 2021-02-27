@@ -45,7 +45,7 @@ function json(path, local, namePrefix) {
     if (options && options.get('optional').toBoolean().isTrue) {
       return nodes.null
     }
-    throw new Error('failed to locate .json file ' + path)
+    throw new Error('failed to locate .yml file ' + path)
   }
 
   // read

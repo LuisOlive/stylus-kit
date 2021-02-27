@@ -1,0 +1,66 @@
+# Sources:
+#  https://usbrandcolors.com/
+#  https://www.schemecolor.com/
+#
+
+airbnb:
+  rausch: '#FF5A5F'
+  babu: '#00A699'
+  arches: '#FC642D'
+  hof: '#484848'
+  foggy: '#767676'
+
+google:
+  blue: '#4285F4'
+  red: '#DB4437'
+  yellow: '#F4B400'
+  green: '#0F9D58'
+
+facebook:
+  old: '#4267B2'
+  grey: '#898F9C'
+
+instagram:
+  royal-blue: '#405DE6'
+  blue: '#5B51D8'
+  dark:
+    pink: '#C13584'
+    orange: '#F56040'
+  purple: '#833AB4'
+  purple-red: '#E1306C'
+  red: '#FD1D1D'
+  orange: '#F77737'
+  yellow: '#FCAF45'
+  light-yellow: '#FFDC80'
+
+messenger:
+  light-blue: '#00B2FF'
+  blue: '#006AFF'
+
+microsoft:
+  orange-red: '#F25022'
+  green: '#7FBA00'
+  blue: '#00A4EF'
+  yellow: '#FFB900'
+  gray: '#737373'
+
+spotify:
+  green: '#1DB954'
+  black: '#191414'
+
+twitter:
+  black: '#14171A'
+  gray: '#657786'
+  light-gray: '#AAB8C2'
+  extra:
+    light-gray: '#E1E8ED'
+    extra-light-gray: '#F5F8FA'
+
+whatsapp:
+  teal:
+    green: '#128C7E'
+    green-dark: '#075E54'
+  light-green: '#25D366'
+  blue: '#34B7F1'
+
+youtube-almost-gray: '#28'
