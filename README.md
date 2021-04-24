@@ -42,11 +42,20 @@ this do not provide prefixes, because nib and postcss are written for make it
 
 ## Get started
 
+### Install
 ```
 npm i -D stylus-kit
 ```
 
-import the plugin for the compiler
+### import the plugin for the compiler
+
+#### using terminal
+
+```
+npx stylus index.styl -u node_modules/stylus-kit
+```
+
+#### Javascript
 
 ```js
 const stylus = require('stylus')
@@ -56,6 +65,19 @@ const stylusKit = require('stylus-kit')
 stylus(readFileSync('./index.styl', 'utf-8'), {
   use: [stylusKit()]
 }).render(console.error, console.log)
+```
+
+#### Webpack
+
+```js
+{
+  loader: 'stylus-loader',
+  options: {
+    stylusOptions: {
+      use: ['stylus-kit']
+    }
+  }
+}
 ```
 
 add the library in your index.styl

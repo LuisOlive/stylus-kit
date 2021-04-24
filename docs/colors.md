@@ -42,6 +42,10 @@ available:
 `airbnb`, `airbnb-rausch`, `airbnb`, `airbnb-babu`, `airbnb-arches`, `airbnb-hof`,
 `airbnb-foggy`, `amazon`, `android`, `angular`, `angular-red`, `angular-dark`, `apple`
 
+### D
+
+`discord`
+
 ### F
 
 `facebook`, `facebook-old`, `facebook-grey`
@@ -80,8 +84,8 @@ available:
 
 ### T
 
-`twitter`, `twitter-black`, `twitter-gray`, `twitter-light-gray`, `twitter-extra-light-gray`,
-`twitter-extra-extra-light-gray`
+`telegram`, `twitter`, `twitter-black`, `twitter-gray`, `twitter-light-gray`,
+`twitter-extra-light-gray`, `twitter-extra-extra-light-gray`
 
 ### V
 

@@ -1,12 +1,14 @@
 # Sources:
 #  https://usbrandcolors.com/
 #  https://www.schemecolor.com/
+#  https://www.color-hex.com/
 #
 
 airbnb: '#FF5A5F'
 amazon: '#F90'
 android: '#78C257'
 apple: '#5'
+discord: '#7289da'
 facebook: '#2D88FF'
 google: '#4285F4'
 messenger: '#00B2FF'
@@ -15,6 +17,7 @@ netflix: '#E50914'
 pinterest: '#E60023'
 snapchat: '#FFFC00'
 spotify: '#1DB954'
+telegram: '#0088cc'
 twitter: '#1DA1F2'
 whatsapp: '#25D366'
 yahoo: '#430297'

@@ -1,0 +1,76 @@
+__responsivePropsRender()
+  if length(arguments) == 1
+    font-size arguments
+    
+  else
+    {shift(arguments)} arguments
+
+sm()
+  +moreThan(measures.breakpoints.sm)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+
+md()
+  +moreThan(measures.breakpoints.md)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+
+lg()
+  +moreThan(measures.breakpoints.lg)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+
+xl()
+  +moreThan(measures.breakpoints.xl)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+
+xxl()
+  +moreThan(measures.breakpoints.xxl)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+      
+not-sm()
+  +lessThan(measures.breakpoints.sm)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+
+not-md()
+  +lessThan(measures.breakpoints.md)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+
+not-lg()
+  +lessThan(measures.breakpoints.lg)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+
+not-xl()
+  +lessThan(measures.breakpoints.xl)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}
+      
+not-xxl()
+  +lessThan(measures.breakpoints.xxl)
+    if arguments
+      __responsivePropsRender arguments
+    else
+      {block}

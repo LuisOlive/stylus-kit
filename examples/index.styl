@@ -1,19 +1,27 @@
 @require stylus-kit
-  
-.faz
-  grid-template-columns map(1..5, @(a){ (a)fr })
-  
-.foo
-  odd-numbers filter(1..10, @(a){ a % 2 })
-  
-.bar
-  z-index reduce(1..5, @(a, b){ '%s%s' % (a b) })
-  background-color facebook
 
-.faz
-  some-lists concat(1..9, range(10, 100, 10), range(100, 1001, 100))
+f(str)
+  warn('nueva func')
+  ans = split('{', str)
+  ans = map(ans, @(x){split('}', x)})
+  ans = map(ans, @(x){
+    p('.............')
+    p(x)
+    
+    x0 = lookup(x[0])
+    
+    p(x[0])
+    
+    x
+  })
+  p(ans)
+  ans
   
-my-hash = yaml('stylus-kit/yml/measures.bootstrap.yml', { hash: true })
-// zip(('width' 'height' 'color'), (4em 5em cyan))
+padd = 1rem
+padd2 = padd * 2
 
-p(my-hash.breakpoints)
+div
+  padding padd2
+  height calc(100vw - 4em + 3px)
+  width 'calc(50% - %s)' % padd2
+  --str f('padd vale {padd} y padd2 vale {padd2}')

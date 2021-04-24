@@ -2,7 +2,7 @@
 
 # Breakpoints
 
-They are the bootstrap names, defined with 300px's intervals.
+They are the bootstrap names, defined with 500px's intervals.
 
 You can use bootstrap values also, see ()
 
@@ -25,12 +25,12 @@ yields
 .responsive-color {
   color: #2d88ff;
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 500px) {
   .responsive-color {
     color: #1da1f2;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .responsive-color {
     color: #f90;
   }
@@ -40,9 +40,28 @@ yields
     color: #78c257;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .responsive-color {
     color: #ff5a5f;
+  }
+}
+```
+
+### changing to max-width
+
+you only need to prefix them with `not-`
+
+```stylus
+.responsive-color
+  not-sm color twitter
+```
+
+yields
+
+```css
+@media screen and (max-width: 500px) {
+  .responsive-color {
+    color: #1da1f2;
   }
 }
 ```
@@ -66,7 +85,7 @@ yields
 body {
   font-size: 12px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   body {
     font-size: 14px;
   }
@@ -76,7 +95,7 @@ body {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   body {
     font-size: 18px;
   }
@@ -110,7 +129,7 @@ yields
   background: #405de6;
   color: #5b51d8;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .responsive-color {
     background: #c13584;
     color: #f56040;
@@ -138,19 +157,19 @@ yields
                     'foo bar' auto \/\
                      2fr 1fr
 
-  // another mixins
+  // other mixins
   xl inset 25px
 ```
 
 yields
 
 ```css
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 500px) {
   .awesome-grid {
     display: none;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .awesome-grid {
     background: url('/my/path.jpg') no-repeat cover center center fixed;
   }
@@ -160,7 +179,7 @@ yields
     grid-template: 'faz faz' 60px 'foo bar' auto/2fr 1fr;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .awesome-grid {
     top: 25px;
     left: 25px;
@@ -172,13 +191,15 @@ yields
 
 ```stylus
 measures.breakpoints.sm
-// => 300px
+// => 500px
 measures.breakpoints.md
-// => 600px
+// => 700px
 measures.breakpoints.lg
 // => 900px
 measures.breakpoints.xl
-// => 1200px
+// => 1100px
+measures.breakpoints.xxl
+// => 1400px
 ```
 
 ### redifining them
@@ -187,7 +208,7 @@ stylus-kit includes the file with bootstrap measures
 
 ```stylus
 measures = yaml('stylus-kit/yml/measures.bootstrap.yml', { hash: true })
-// => { "breakpoints": { "sm": 576px, "md": 768px, "lg": 992px, "xl": 1200px } }
+// => { "breakpoints": { "sm": 576px, "md": 768px, "lg": 992px, "xl": 1100px } }
 ```
 
 or define your own ones

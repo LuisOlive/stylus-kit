@@ -1,11 +1,11 @@
 {
   "name": "stylus-kit",
-  "version": "0.9.0",
+  "version": "0.9.4",
   "description": "This is a library of stylus mixins for the most natural syntax in stylus",
   "main": "src/index.js",
   "scripts": {
-    "start": "npx stylus examples/colors.styl -u ./src/index.js -w",
-    "once": "npx stylus examples/ -u ./src/index.js"
+    "start": "npx stylus examples/index.styl -u ./src/index.js -w",
+    "once": "npx stylus examples/index.styl -u ./src/index.js"
   },
   "keywords": [
     "stylus",
@@ -21,5 +21,17 @@
   "devDependencies": {
     "@types/stylus": "^0.48.33",
     "json-beautify": "^1.1.1"
-  }
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisOlive/stylus-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LuisOlive/stylus-kit/issues"
+  },
+  "homepage": "https://github.com/LuisOlive/stylus-kit#readme"
 }
