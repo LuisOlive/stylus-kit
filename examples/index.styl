@@ -1,27 +1,33 @@
-@require stylus-kit
+// @require arrays
 
-f(str)
-  warn('nueva func')
-  ans = split('{', str)
-  ans = map(ans, @(x){split('}', x)})
-  ans = map(ans, @(x){
-    p('.............')
-    p(x)
+
+// f(str)
+//   warn('nueva func')
+//   ans = split('{', str)
+//   ans = map(ans, @(x){split('}', x)})
+//   ans = map(ans, @(x){
+//     p('.............')
+//     p(x)
     
-    x0 = lookup(x[0])
+//     x0 = lookup(x[0])
     
-    p(x[0])
+//     p(x[0])
     
-    x
-  })
-  p(ans)
-  ans
+//     x
+//   })
+//   p(ans)
+//   ans
   
-padd = 1rem
-padd2 = padd * 2
+// padd = 1rem
+// padd2 = padd * 2
 
+// div
+//   padding padd2
+//   height calc(100vw - 4em + 3px)
+//   width 'calc(50% - %s)' % padd2
+//   --str f('padd vale {padd} y padd2 vale {padd2}')
+
+
+  
 div
-  padding padd2
-  height calc(100vw - 4em + 3px)
-  width 'calc(50% - %s)' % padd2
-  --str f('padd vale {padd} y padd2 vale {padd2}')
+  box-model (0 .2rem) 1rem

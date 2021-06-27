@@ -14,3 +14,17 @@ p( concat(1..9, range(10, 100, 10), range(100, 1001, 100)) )
 
 p( zip(('width' 'height' 'color'), (4em 5em cyan)) )
 // => inspect: {"width":"(4em)","height":"(5em)","color":"(#0ff)"}
+
+p( clone('hello, world', 3) )
+// => 'hello, world' ('hello, world') ('hello, world')
+
+p( sort(651 894 651 846 32 74 516 89 4) )
+// => (4) (32) (74) (89) (516) (651) (651) (846) (894)
+
+p( reverse(651 894 651 846 32 74 516 89 4) )
+// => 4 89 516 74 32 846 651 894 651
+
+div
+  margin Px(10...14)
+  grid-template-columns Fr(1..5)
+  width Percent(50)

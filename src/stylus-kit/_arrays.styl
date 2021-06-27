@@ -29,8 +29,45 @@ zip(keys, values)
 copy(old)
   map(old, @(x){x})
   
-clone(value, n)
-  map(1..n, @(x){value})
-    
-largest(array)
-  reduce(array, @(acc, cur){cur > acc ? cur : acc})
+clone(value, times_)
+  map(1..times_, @(x){value})
+   
+sort(array, fn = null)
+  // default sort function
+  if fn == null
+    fn(a, b)
+      a > b
+
+  // bubble sort
+  for i in 1..(length(array) - 1)
+    for j in 0..i - 1
+      if fn(array[j], array[i])
+        temp = array[i]
+        array[i] = array[j]
+        array[j] = temp
+  
+  array
+  
+Unit(unit_, array)
+  map(array, @(x){x * unit_})
+  
+Em(array)
+  Unit(1em, array)
+  
+Rem(array)
+  Unit(1rem, array)
+  
+Vw(array)
+  Unit(1vw, array)
+  
+Vh(array)
+  Unit(1vh, array)
+  
+Px(array)
+  Unit(1px, array)
+  
+Fr(array)
+  Unit(1fr, array)
+  
+Percent(array)
+  Unit(1%, array)

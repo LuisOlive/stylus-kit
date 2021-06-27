@@ -44,3 +44,65 @@ creates a hash with two arrays
 zip(('width' 'height' 'color'), (4em 5em cyan))
 // => {"width":"(4em)","height":"(5em)","color":"(#0ff)"}
 ```
+
+## `copy`
+
+it creates a copy of an array to immutable operations
+
+## `clone`
+
+it repeats a ident n times and returns an array
+
+```stylus
+clone('hello, world', 3)
+// => 'hello, world' 'hello, world' 'hello, world'
+```
+
+## `sort`
+
+sorts a list using bubble method, taken of stylus docs
+
+```stylus
+sort('e' 'c' 'f' 'a' 'b' 'd')
+// => 'a' 'b' 'c' 'd' 'e' 'f'
+
+sort(5 3 6 1 2 4, @(a, b){
+  a < b
+})
+// => 6 5 4 3 2 1
+```
+
+## reverse
+
+array reverse mathod, using javascript api
+
+```stylus
+p( reverse(651 894 651 846 32 74 516 89 4) )
+// => 4 89 516 74 32 846 651 894 651
+```
+
+## `unit transforms`
+
+We created some fucntions to transform easily number arrays to css units
+
+Available:
+
+`Unit(unit_, array)`, `Em(array)`, `Rem(array)`, `Vw(array)`, `Vh(array)`, `Px(array)`, `Fr(array)`,
+`Percent(array)`,
+
+```stylus
+div
+  margin Px(10...14)
+  grid-template-columns Fr(1..5)
+  width Percent(50)
+```
+
+yields
+
+```css
+div {
+  margin: 10px 11px 12px 13px;
+  grid-template-columns: 1fr 2fr 3fr 4fr 5fr;
+  width: 50%;
+}
+```

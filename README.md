@@ -40,9 +40,20 @@ yields:
 
 this do not provide prefixes, because nib and postcss are written for make it
 
+## Features
+
+- [array functions](https://github.com/LuisOlive/stylus-kit/blob/master/docs/arrays.md)
+- [@medias](https://github.com/LuisOlive/stylus-kit/blob/master/docs/at-medias.md)
+- [basic mixins](https://github.com/LuisOlive/stylus-kit/blob/master/docs/basic.md)
+- [new breakpoints system](https://github.com/LuisOlive/stylus-kit/blob/master/docs/breakpoints.md)
+- [new color shortcuts](https://github.com/LuisOlive/stylus-kit/blob/master/docs/colors.md)
+- [flexbox shortcuts](https://github.com/LuisOlive/stylus-kit/blob/master/docs/flexbox.md)
+- [and more!](https://github.com/LuisOlive/stylus-kit/blob/master/docs/other-functions.md)
+
 ## Get started
 
 ### Install
+
 ```
 npm i -D stylus-kit
 ```

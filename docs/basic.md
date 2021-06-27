@@ -4,6 +4,24 @@ this mixins are provide to write the most natural code
 
 some of these can be generate unnecessary code, we recommend use advanced minifiers as postcss
 
+## box-model
+
+shortcut to `margin` and `padding`
+
+```stylus
+div
+  box-model (0 .2rem) 1rem
+```
+
+yields:
+
+```css
+div {
+  margin: 0 0.2rem;
+  padding: 1rem;
+}
+```
+
 ## Size
 
 shortcut to `width` and `height`
